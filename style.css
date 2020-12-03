@@ -1,0 +1,136 @@
+@keyframes animasi{
+    /* from{
+        color: red;
+    } to{
+        color: royalblue;
+    } */
+
+    0%{
+        color: royalblue;
+    } 50%{
+        color: saddlebrown;
+    } 100%{
+        color: green;
+    }
+    /* Keyframes animasi -> dari 0% ke 100% */
+}
+
+@keyframes bg-anime{
+    50%{
+        background-color: rebeccapurple;
+    } 100%{
+        background-color: springgreen;
+    }
+}
+
+.bg-animate{
+    animation:bg-anime 3s linear 1s infinite none;
+}
+
+.text{
+    animation: animasi 3s linear 1s infinite none;
+    font-size: 20px;
+    /* animation: nama durations timing-function delay iteration-count direction fill-mode*/
+}
+/* durations -> lama animasi berjalan
+
+timing function
+ease lambat cepat
+ease-in cepat lambat
+ease-out cepat lambat
+ease-in-and-out lambat cepat cepat lambat
+linear stabil
+
+delay -> delay sebelum animasi berjalan
+iteration-count -> animasi berjalan berapa banyak
+
+direction
+reverse 100 ke 0
+alternate 0 sampe 100 lalu balik lagi 100 ke 0
+alternate-reverse 100 sampe 0 lalu balik lagi 0 ke 100
+none 0 ke 100
+
+fill-mode
+none awalnya gakasih value pas jalan baru dikasih value
+fowards pas animasi selesai dia bakal stay di 100% gabakal balik 0%
+backwards valuenya dibalik
+both gabungan dari backward dan forward*/
+
+/* Catatan :
+    !important : syntax absolute
+*/
+
+/* 
+    FLEX
+    untuk menyusun items2 agar lebih rapi dan lebih mudah
+    display : flex;
+
+    flex-direction -> menyusun flex ke arah mana
+    row -> menyusun items ke sb x
+    column -> menyusun item ke sb y
+    reverse -> menyusun item ke sb x namun urutan terbalik
+
+    flex-wrap untuk menyesuaikan ukurannya
+    efek samping : items bakalan turun kebawah kalau kelewat batas screen
+
+    justify-content : mengatur letak items
+    center : tengah
+    end : diakhir
+    start : diawal
+    space-between : diberi space |0 0 0 0 0| << ilustrasinya
+    space-around : diberi space | 0 0 0 0 0 | << ilustrasiya
+
+    align-items : meletakkan items dalam container
+    centre
+    end
+    start
+
+    align-content : mirip kyk justify content namun dilihat dari sb y (vertikal)
+*/
+
+@media only screen and (max-width: 600px){
+    .text{
+        font-size: 10px;
+    }
+}
+/* Media Query
+    print membuat page web untuk print
+    screen responsive
+    speech komputer ngomong
+
+    Mediaquery - Screen
+    untuk responsive
+
+    Catatan :
+    Media query harus diletakkan dipaling bawah CSS
+*/
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.square{
+    width: 5rem;
+    height: 5rem;
+}
+
+.div1{
+    background-color: saddlebrown;
+}
+
+.div2{
+    background-color: salmon;
+}
+
+.div3{
+    background-color: seagreen;
+}
+
+.div4{
+    background-color: silver;
+}
+
+.div5{
+    background-color: steelblue;
+}
