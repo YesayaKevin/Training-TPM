@@ -16,15 +16,21 @@
 }
 
 @keyframes bg-anime{
-    50%{
-        background-color: rebeccapurple;
+    0%{
+        background-color: red;
+    } 25%{
+        background-color: skyblue;
+    } 50%{
+        background-color: greenyellow;
+    } 75%{
+        background-color: skyblue;
     } 100%{
-        background-color: springgreen;
+        background-color: red;
     }
 }
 
 .bg-animate{
-    animation:bg-anime 3s linear 1s infinite none;
+    animation:bg-anime 5s ease-in-out 0s infinite none;
 }
 
 .text{
@@ -93,6 +99,7 @@ both gabungan dari backward dan forward*/
         font-size: 10px;
     }
 }
+
 /* Media Query
     print membuat page web untuk print
     screen responsive
